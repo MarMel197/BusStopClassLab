@@ -40,6 +40,8 @@ class TestBus(unittest.TestCase):
         person_1 = Person("Guido van Rossum", 64, "Ocean Terminal")
         person_2 = Person("Carol Willing", 50, "Edinburgh Airport")
         bus_stop = BusStop("Waverly Station")
+        bus1 = Bus(21, "Ocean Terminal")
+        bus2 = Bus(42, "edinburgh Airport")
         bus_stop.add_to_queue(person_1)
         bus_stop.add_to_queue(person_2)
         self.bus.pick_up_from_stop(bus_stop)
